@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIKACHU</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <style id="demo2"></style>
+    <div id="button">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        #button {
+            position: fixed;
+            right: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        #button>button {
+            margin-bottom: 10px;
+            padding: 4px 8px;
+        }
+
+        #demo2 {
+            display: none;
+        }
+
+        #demo {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 50vh;
+            width: 100%;
+            border: 1px solid red;
+            overflow: scroll;
+        }
+
+        #demo::-webkit-scrollbar {
+            display: none;
+        }
+
+        #html {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50vh;
+        }
+    </style>
+    <div id="html">
+        <div class="skin">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose">
+                <div class="yuan"></div>
+            </div>
+            <div class="left face">
+            </div>
+            <div class="right face">
+            </div>
+            <div class="mouth">
+                <div class="up">
+                    <div class="left lip"></div>
+                    <div class="right lip"></div>
+                </div>
+                <div class="down">
+                    <div class="yuan1">
+                        <div class="yuan2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="you one"></div>
+            <div class="you two"></div>
+        </div>
+    </div>
+    <script src="./test.js"></script>
+</body>
+
+</html>
